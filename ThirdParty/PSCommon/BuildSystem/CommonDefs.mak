@@ -6,21 +6,7 @@ ifndef CFG
     CFG = Release
 endif
 
-# find out the platform on which we're running
-MACHINE = $(shell uname -m)
-ifneq (,$(findstring x86_64,$(MACHINE)))
-	HOST_PLATFORM = x64
-else ifneq (,$(findstring x86,$(MACHINE)))
-	HOST_PLATFORM = x86
-else ifneq (,$(findstring i686,$(MACHINE)))
-	HOST_PLATFORM = x86
-else ifneq (,$(findstring i386,$(MACHINE)))
-	HOST_PLATFORM = x86
-else ifneq (,$(findstring arm,$(MACHINE)))
-	HOST_PLATFORM = Arm
-else
-	DUMMY:=$(error Can't determine host platform)
-endif
+HOST_PLATFORM = Arm
 
 # now check if this is a cross-compilation or not
 ifeq "$(PLATFORM)" ""
