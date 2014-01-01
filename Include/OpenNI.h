@@ -85,11 +85,11 @@ typedef struct
 /** This special URI can be passed to @ref Device::open() when the application has no concern for a specific device. */
 #if ONI_PLATFORM != ONI_PLATFORM_WIN32
 #pragma GCC diagnostic ignored "-Wunused-variable"
-#pragma GCC diagnostic push
+// #pragma GCC diagnostic push
 #endif
 static const char* ANY_DEVICE = NULL;
 #if ONI_PLATFORM != ONI_PLATFORM_WIN32
-#pragma GCC diagnostic pop
+// #pragma GCC diagnostic pop
 #endif
 
 /**

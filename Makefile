@@ -41,7 +41,7 @@ ALL_DRIVERS = \
 # list all wrappers
 ALL_WRAPPERS = \
 	Wrappers/java/OpenNI.jni \
-	Wrappers/java/OpenNI.java 
+#	Wrappers/java/OpenNI.java 
 
 # list all tools
 ALL_TOOLS = \
@@ -67,7 +67,7 @@ CORE_SAMPLES = \
 
 # list all java samples
 JAVA_SAMPLES = \
-	Samples/SimpleViewer.java	
+#	Samples/SimpleViewer.java	
 
 ifeq "$(GLUT_SUPPORTED)" "1"
 	ALL_TOOLS += \
